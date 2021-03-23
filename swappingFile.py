@@ -1,0 +1,13 @@
+def swapFileData():
+    name=input("Enter the name of the  first file that you want to acess ")
+    name2=input("Enter the name of the  first file that you want to acess ")
+    file1=open(name)
+    file2=open(name2)
+    data_a=file1.read()
+    data_b=file2.read()
+    a=open(name,'w')
+    b=open(name2,'w')
+    a.write(data_b)
+    b.write(data_a)
+    print("SWAPPED!!")
+swapFileData()
